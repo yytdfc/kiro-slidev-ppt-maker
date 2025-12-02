@@ -257,29 +257,30 @@ Before creating any presentation, **READ** `./ppt-aws-theme-demo/slides.md` to l
 
 ✅ **Good slide content:**
 - 1 main heading
-- 3-5 bullet points (max 7)
+- 3-5 bullet points (max 7-10 for default layout)
 - 1-2 code blocks (keep them short)
 - 1 diagram or image
 - Total content fits comfortably on screen
 
-❌ **Too much content (split into multiple slides):**
-- More than 7 bullet points
-- Multiple large code blocks
-- Long paragraphs of text
-- Multiple diagrams on one slide
-- Content that requires scrolling
+❌ **Too much content - use two-cols layout or split:**
+- More than 10 bullet points in default layout → **USE `two-cols` layout**
+- More than 10 lines of content → **USE `two-cols` layout**
+- Multiple large code blocks → split into multiple slides
+- Long paragraphs of text → use `two-cols` or split
+- Multiple diagrams on one slide → split into multiple slides
 
 **When content is too much:**
-1. **Split by topic**: Create separate slides for each sub-topic
+1. **Split by topic**: Create separate slides for each sub-topic (PREFERRED)
 2. **Use section dividers**: Add `layout: section` between major topics
-3. **Progressive disclosure**: Use v-click to reveal content gradually
+3. **Use two-cols for long content**: If content exceeds ~10 lines, use `layout: two-cols` with scrolling
 4. **Simple two-column**: Use `layout: left-right` for short content (within ~10 lines)
-5. **Scrollable two-column**: Use `layout: two-cols` when content exceeds ~10 lines (supports scrolling)
-6. **Multiple slides**: Better to have 3 clear slides than 1 crowded slide
+5. **Multiple slides**: Better to have 3 clear slides than 1 crowded slide
 
-**Layout selection guideline:**
-- `left-right`: Simple left/right split, no title, for short content (~10 lines max)
-- `two-cols`: Has title slot, supports scrolling, for longer content that needs structure
+**Layout selection guideline (IMPORTANT):**
+- `default`: Standard single-column layout for content within ~10 lines
+- `left-right`: Simple left/right split, no title, for short content (~10 lines max per column)
+- `two-cols`: **USE THIS for content > 10 lines** - Has title slot, supports scrolling, for longer content
+- **Rule of thumb**: If you have more than 10 bullet points or lines → use `two-cols` layout
 
 **Examples of splitting:**
 
@@ -509,7 +510,7 @@ mkdir -p ppt-{topic-name}/public/images/
 - Make reasonable assumptions about structure
 - **Split content into multiple slides** when one slide has too much content
 - Keep each slide focused on one main idea
-- **Keep content within ~10 lines per column** to avoid scrolling
+- **Use two-cols layout for content > 10 lines** - it supports scrolling and better organization
 - **Use emoji for icons** (🚀 ✅ ❌ 💡 📊 🔧) - safer than icon components
 - **Keep diagrams simple**: 3-5 nodes max, use scale to fit
 - **Use appropriate diagram layout**: LR for wide, TD for tall
@@ -522,8 +523,9 @@ mkdir -p ppt-{topic-name}/public/images/
 - Work in root directory or ppt-aws-theme-demo
 - Use other themes (always use AWS dark theme)
 - **Use ANY animations** (v-click, v-motion, v-clicks) - they cause issues and hide content
-- Create slides with excessive content (prefer splitting into multiple slides)
-- Use `two-cols` for short content (use `left-right` instead)
+- Create slides with excessive content in default layout (use `two-cols` for > 10 lines)
+- Use `two-cols` for short content (use `left-right` or `default` instead)
+- Use `default` or `left-right` for content > 10 lines (use `two-cols` instead)
 - **Cram too much content on one slide** (max 5-7 bullet points)
 - Put multiple large code blocks on the same slide
 - Create slides that require scrolling
@@ -577,7 +579,7 @@ The presentation is complete. User can run the preview command provided in Step 
 - ✅ **Use bold text**: Emphasize important points with `**bold**`
 - ✅ Include diagrams/code where relevant
 - ✅ Write presenter notes for complex slides
-- ✅ **Check content density**: Each slide has 5-7 items max
+- ✅ **Check content density**: Use `two-cols` layout if content exceeds 10 lines
 - ✅ **Split overcrowded slides**: Create multiple slides if needed
 - ✅ **One main idea per slide**: Keep focus clear
 - ✅ **Content visibility**: Ensure all content displays without scrolling
