@@ -1,0 +1,8 @@
+/* AWS Dark Theme Layout Styles */
+
+/* Global layout styles are now defined in individual layout components */
+/* This file is kept for any future global layout overrides */
+
+.slidev-layout {
+  @apply text-white;
+}

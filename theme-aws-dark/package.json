@@ -1,0 +1,25 @@
+{
+  "name": "slidev-theme-aws-dark",
+  "version": "1.0.0",
+  "description": "AWS dark theme for Slidev",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "aws"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "slidev": ">=0.48.0"
+  },
+  "scripts": {},
+  "slidev": {
+    "colorSchema": "dark",
+    "highlighter": "shiki",
+    "defaults": {
+      "fonts": {
+        "sans": "Amazon Ember, Helvetica, Arial, sans-serif",
+        "mono": "Fira Code, monospace"
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+/* AWS Dark Theme - Main Styles */
+
+@import './layout.css';
+@import './code.css';
+
+:root {
+  /* AWS Brand Colors */
+  --aws-orange: #ff9900;
+  --aws-blue: #00a1e0;
+  --aws-dark-blue: #232f3e;
+  --aws-light-blue: #2e6db5;
+  --aws-purple: #9d4edd;
+  --aws-green: #00d4aa;
+  
+  /* Background Colors */
+  --slidev-theme-primary: #ff9900;
+  --slidev-theme-background: #000000;
+  --slidev-theme-foreground: #ffffff;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Amazon Ember', 'Helvetica Neue', Arial, sans-serif;
+  background: rgb(20, 30, 44);
+  color: #ffffff;
+}
+
+/* Headings */
+h1 {
+  @apply text-5xl font-bold mb-6;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+h2 {
+  @apply text-4xl font-bold mb-4;
+  color: #ffffff;
+}
+
+h3 {
+  @apply text-3xl font-semibold mb-3;
+  color: #ffffff;
+}
+
+h4 {
+  @apply text-2xl font-semibold mb-2;
+  color: #ffffff;
+}
+
+/* Paragraphs */
+p {
+  @apply text-lg mb-4;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Lists */
+ul, ol {
+  @apply text-lg mb-4;
+  padding-left: 2rem;
+}
+
+li {
+  @apply mb-2;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: var(--aws-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--aws-orange);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--aws-blue);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+/* Strong/Bold */
+strong {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Emphasis/Italic */
+em {
+  font-style: italic;
+}
+
+/* Footer is now handled in individual layout components */
+
+/* Gradient Text Effect */
+.gradient-text {
+  background: linear-gradient(135deg, #00a1e0 0%, #00d4aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+
+/* Page Number */
+.slidev-page-number {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Tables */
+table {
+  @apply w-full my-4;
+  border-collapse: collapse;
+}
+
+th {
+  @apply text-left font-bold py-2 px-4;
+  background: rgba(0, 161, 224, 0.2);
+  border-bottom: 2px solid var(--aws-blue);
+}
+
+td {
+  @apply py-2 px-4;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Images */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Mermaid Diagrams - White Lines and Boxes */
+
+/* Arrow lines - White */
+.mermaid .edgePath .path {
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+  fill: none !important;
+}
+
+/* Arrowheads - White */
+.mermaid .edgePath marker path {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.mermaid marker path {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Node boxes - White border, transparent fill */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon {
+  fill: transparent !important;
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+}
+
+/* Node text - White */
+.mermaid .node .label,
+.mermaid .nodeLabel {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  font-family: 'Amazon Ember', 'Helvetica Neue', Arial, sans-serif !important;
+  font-size: 14px !important;
+}
+
+/* Edge labels */
+.mermaid .edgeLabel {
+  background-color: rgba(20, 30, 44, 0.9) !important;
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+.mermaid .edgeLabel rect {
+  fill: rgba(20, 30, 44, 0.9) !important;
+  stroke: none !important;
+}
+
+.mermaid .edgeLabel .label {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Cluster/subgraph styling - White dashed border */
+.mermaid .cluster rect {
+  fill: transparent !important;
+  stroke: rgba(255, 255, 255, 0.5) !important;
+  stroke-width: 1px !important;
+  stroke-dasharray: 5, 5 !important;
+}
+
+.mermaid .cluster .label,
+.mermaid .cluster-label {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Flowchart specific - White lines */
+.mermaid .flowchart-link {
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+}
+
+/* Sequence diagram styling */
+.mermaid .actor {
+  fill: transparent !important;
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid .actor-line {
+  stroke: rgba(255, 255, 255, 0.5) !important;
+  stroke-width: 1px !important;
+  stroke-dasharray: 5, 5 !important;
+}
+
+.mermaid .messageLine0,
+.mermaid .messageLine1 {
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid .messageText {
+  fill: #ffffff !important;
+  stroke: none !important;
+}
+
+.mermaid .note {
+  fill: transparent !important;
+  stroke: #ffffff !important;
+  stroke-width: 1px !important;
+}
+
+.mermaid .noteText {
+  fill: #ffffff !important;
+}

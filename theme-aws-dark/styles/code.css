@@ -1,0 +1,53 @@
+/* Code Block Styles */
+
+/* Inline Code */
+:not(pre) > code {
+  @apply px-2 py-1 rounded;
+  background: rgba(0, 161, 224, 0.15);
+  color: #00d4aa;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* Code Blocks */
+pre {
+  @apply rounded-lg p-4 my-4;
+  background: #1a1a1a !important;
+  border: 1px solid rgba(0, 161, 224, 0.3);
+  overflow-x: auto;
+}
+
+pre code {
+  @apply text-sm;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  line-height: 1.6;
+}
+
+/* Shiki Code Highlighting */
+.shiki {
+  background: #1a1a1a !important;
+}
+
+/* Line Numbers */
+.line-numbers .line::before {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Highlighted Lines */
+.line.highlighted {
+  background: rgba(0, 161, 224, 0.15);
+  border-left: 3px solid var(--aws-blue);
+  padding-left: 0.5rem;
+  margin-left: -0.5rem;
+}
+
+/* Diff Styles */
+.line.diff.add {
+  background: rgba(0, 212, 170, 0.15);
+  border-left: 3px solid var(--aws-green);
+}
+
+.line.diff.remove {
+  background: rgba(255, 153, 0, 0.15);
+  border-left: 3px solid var(--aws-orange);
+}
