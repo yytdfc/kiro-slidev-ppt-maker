@@ -29,8 +29,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 2rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .section-content :deep(h1) {
