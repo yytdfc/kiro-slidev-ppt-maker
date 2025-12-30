@@ -18,7 +18,7 @@
 
 <style scoped>
 .default {
-  background: #000000;
+  background: var(--theme-background, #000000);
   padding: 1.5rem 3rem 1rem 3rem;
   height: 100%;
   display: flex;

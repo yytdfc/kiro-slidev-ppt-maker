@@ -86,14 +86,19 @@ li {
 }
 
 /* Links */
-a {
-  color: var(--aws-blue);
-  text-decoration: none;
+a,
+.slidev-layout a,
+.slide-content a {
+  color: #00a1e0 !important;
+  text-decoration: underline !important;
   transition: color 0.2s;
 }
 
-a:hover {
-  color: var(--aws-orange);
+a:hover,
+.slidev-layout a:hover,
+.slide-content a:hover {
+  color: var(--aws-orange) !important;
+  text-decoration: underline !important;
 }
 
 /* Blockquotes */
@@ -109,7 +114,7 @@ blockquote {
 /* Strong/Bold */
 strong {
   font-weight: 700;
-  color: #ffffff;
+  color: #00a1e0;
 }
 
 /* Emphasis/Italic */

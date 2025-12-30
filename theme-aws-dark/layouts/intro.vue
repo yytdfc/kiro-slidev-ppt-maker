@@ -17,7 +17,7 @@
 
 <style scoped>
 .intro {
-  background: #000000;
+  background: var(--theme-background, #000000);
   padding: 2.5rem 3rem 1.5rem 3rem;
   display: flex;
   flex-direction: column;
