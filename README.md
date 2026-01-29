@@ -4,6 +4,8 @@
 
 An AI-powered presentation generator using Kiro IDE and Slidev framework. Create professional AWS-themed presentations with simple natural language prompts.
 
+🎥 **[Video Demo](https://du7u4d2q1sjz6.cloudfront.net/kiroppt_compressed.mp4)**
+
 ## Features
 
 - 🤖 **AI-Powered**: Generate complete presentations using natural language

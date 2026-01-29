@@ -4,6 +4,8 @@
 
 一个基于 Kiro IDE 和 Slidev 框架的 AI 驱动演示文稿生成器。通过简单的自然语言提示创建专业的 AWS 主题演示文稿。
 
+🎥 **[视频演示](https://du7u4d2q1sjz6.cloudfront.net/kiroppt_compressed.mp4)**
+
 ## 特性
 
 - 🤖 **AI 驱动**: 使用自然语言生成完整的演示文稿
